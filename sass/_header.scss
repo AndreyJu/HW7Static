@@ -1,0 +1,120 @@
+
+/*---HEADER---*/
+
+ul.head-menu,
+ul.submenu {
+	list-style: none;
+	display: inline-block;
+	display: -moz-inline-box;
+}
+
+header {
+  height: 56px;
+  width: 100%;
+  background-color: $whitesmoke;
+  & li.burger-menu {
+  	height: 56px;
+  	width: 56px;
+  	background-color: $orange;
+  	border-top-left-radius: 2px;
+  	border-bottom-left-radius: 2px;
+  	& a {
+  		width: 100%;
+  		height: 56px;
+  		line-height: 56px;
+  		display: block;
+  		text-align: center;
+  		&:hover {
+  			background-color: darken($orange, 20%);
+  		}
+  	}
+  }
+  & #catagories-logo {
+    height: 56px;
+    width: 226px;
+    background-color: $gray4;
+    position: relative;
+    & p {
+      top: 16px;
+      left: 19px;
+      position: absolute;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      line-height: 1.714; 
+      text-transform: uppercase;
+      color: $white;
+    }
+  }
+  #submenu {
+    & .submenu {
+      height: 56px;
+      width: auto;
+      & li {
+        height: 100%;
+        width: auto;
+        & a {
+          padding: 0 22.5px;
+          display: block;
+          height: 56px;
+          line-height: 56px;
+          color: $black;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 13px;
+          text-decoration: none; 
+          text-transform: uppercase;
+          &:hover {
+            background-color: darken($whitesmoke, 20%);
+          }
+        }
+      }
+    } 
+  }
+  & #cart {
+    height: 100%;
+    width: 78px;
+    background-color: $gray4;
+    & a {
+      height: 56px;
+      width: 100%;
+      position: relative;
+      & #helper {
+        position: absolute;
+        top: 41px;
+        left: 27px;
+        & #counter {
+          text-align: center;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 13px;
+          color: $whitesmoke;
+          position: absolute;
+          height: 15px;
+          width: 15px;
+          top: -10px;
+          left: 8px;
+          background-color: $orange;
+          border-radius: 50%;
+        } 
+      }   
+    }
+    &:hover {
+      background-color: lighten($gray4, 20%);
+    }
+  }
+  & #search {
+    height: 100%;
+    width: 56px;
+    background-color: $orange;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    & a {
+      height: 56px;
+      width: 56px;
+      display: block;
+      line-height: 58px;
+      text-align: center;
+    }
+    &:hover {
+      background-color: darken($orange, 20%)
+    }
+  }
+}
