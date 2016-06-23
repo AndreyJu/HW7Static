@@ -1,0 +1,35 @@
+
+/*---HEADER-DROPDOWN---*/
+
+
+
+#header-dropdown {
+	height: 439px;
+  width: 284px;
+  & ul {
+    background-color: $whitesmoke;
+    padding: 19.5px 0;
+    & li {
+      height: 50px;
+      & img {
+        display: inline-block;
+        margin: 0 34px 0 20px;
+      }
+      & a {
+        display: inline-block;
+        float: right;
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: $black;
+        &:hover {
+          background-color: darken($whitesmoke, 20%);
+        }
+      }
+    } 
+  }
+}
